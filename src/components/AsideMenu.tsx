@@ -9,7 +9,7 @@ import { content } from "@/data/content";
 
 function AsideMenu() {
   return (
-    <aside className="flex flex-col justify-between w-96">
+    <aside className="flex flex-col justify-between w-96 h-screen sticky top-0 py-10">
       <nav className="flex flex-col gap-7">
         <Image
           src="/icons/steam.svg"
