@@ -1,0 +1,17 @@
+.container {
+    padding-bottom: 2rem;
+}
+
+.container :global(.swiper-pagination-bullet) {
+   width: 1rem;
+   height: 2px;
+   border-radius: 4px;
+   background-color: rgb(51 65 85);
+   cursor: pointer;
+   transition: width .3s;
+}
+
+.container :global(.swiper-pagination-bullet-active) {
+    width: 2rem;
+    background-color: rgb(255 255 255 / .7);
+}
