@@ -9,27 +9,31 @@ import { content } from "@/data/content";
 
 function AsideMenu() {
   return (
-    <aside className="flex-col justify-between w-72 h-screen sticky top-0 py-10 hidden md:flex">
-      <nav className="flex flex-col gap-7">
+    <aside className="flex-col justify-between w-72 md:h-screen md:sticky top-0 pt-3 md:py-10 flex">
+      <div className="flex justify-between md:block">
+        <button className="rotate-90 md:hidden">|||</button>
+
         <Image
           src="/icons/steam.svg"
           width={150}
           height={50}
           alt="logo steam"
-          className="mb-10"
+          className="mb-0 md:mb-10"
         />
+        
+        <nav className="flex-col gap-7 hidden md:flex">
+          {content.menu.map((item) => (
+            <MenuItem key={item.id} {...item} />
+          ))}
+        </nav>
+      </div>
 
-        {content.menu.map((item) => (
-          <MenuItem key={item.id} {...item} />
-        ))}
-      </nav>
-
-      <div>
+      <div className="hidden md:block">
         <div
           className="h-64 w-full
-        bg-gradient-to-tr from-blue-950 to-blue-400 hover:from-blue-400 hover:to-blue-950 
-        cursor-pointer rounded-3xl flex flex-col justify-between items-end p-5
-      "
+            bg-gradient-to-tr from-blue-950 to-blue-400 hover:from-blue-400 hover:to-blue-950 
+            cursor-pointer rounded-3xl flex flex-col justify-between items-end p-5
+          "
         >
           <TbArrowUpRight size={24} />
           <h3 className="font-bold text-xl text-zinc-200">Do you need help?</h3>
