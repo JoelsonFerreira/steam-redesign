@@ -9,10 +9,8 @@ import { content } from "@/data/content";
 
 function AsideMenu() {
   return (
-    <aside className="flex-col justify-between w-72 md:h-screen md:sticky top-0 pt-3 md:py-10 flex">
+    <aside className="flex-col justify-between w-full md:w-72 md:h-screen md:sticky top-0 pt-3 md:py-10 flex">
       <div className="flex justify-between md:block">
-        <button className="rotate-90 md:hidden">|||</button>
-
         <Image
           src="/icons/steam.svg"
           width={150}
@@ -26,6 +24,8 @@ function AsideMenu() {
             <MenuItem key={item.id} {...item} />
           ))}
         </nav>
+
+        <button className="rotate-90 md:hidden font-semibold">|||</button>
       </div>
 
       <div className="hidden md:block">
