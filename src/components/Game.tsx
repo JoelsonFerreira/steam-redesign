@@ -16,7 +16,7 @@ import { VscLiveShare } from "react-icons/vsc";
 
 function Game() {
   return (
-    <section className="mt-10 gap-2 flex flex-col md:flex-row">
+    <section className="mt-4 md:mt-10 gap-2 flex flex-col md:flex-row">
       <article className="relative">
         <Image
           src={"/banners/witcher3.jpg?v=123"}

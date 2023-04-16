@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`${inter.className} flex gap-10 min-h-screen max-w-screen-2xl mx-auto p-3`}>
+    <div className={`${inter.className} flex gap-10 min-h-screen max-w-screen-2xl mx-auto px-3`}>
       <AsideMenu />
       <main className='flex-1 w-full max-w-6xl py-10'>
         <Header />
