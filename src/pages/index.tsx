@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`${inter.className} flex gap-10 min-h-screen max-w-screen-2xl mx-auto`}>
+    <div className={`${inter.className} flex gap-10 min-h-screen max-w-screen-2xl mx-auto p-3`}>
       <AsideMenu />
       <main className='flex-1 w-full max-w-6xl py-10'>
         <Header />
         <Carousel />
 
-        <section className='grid grid-cols-2 gap-5'>
+        <section className='grid gap-5 md:grid-cols-2'>
           <Card />
           <Card />
           <Card />

@@ -5,7 +5,7 @@ import { AiOutlineHeart, AiOutlineSearch, AiOutlineShopping } from 'react-icons/
 function Header() {
   return (
     <header className='flex items-center justify-between h-11 w-full'>
-      <h4 className='font-bold text-xl text-zinc-200'>Good evening, Joelson!</h4>
+      <h4 className='font-bold text-xl'>Good evening, Joelson!</h4>
       <div className='flex items-center'>
         <strong className='text-sm font-medium'>Online</strong>
         <div className='flex items-center ml-4'>
@@ -25,7 +25,7 @@ function Header() {
             />
             <span className="w-7 h-7 rounded-full -ml-3 flex items-center justify-center bg-slate-800 text-xs font-bold cursor-pointer">+3</span>
         </div>
-        <nav className='flex gap-6 ml-20'>
+        <nav className='flex gap-6 ml-6 md:ml-20'>
             <button className="relative">
                 <AiOutlineSearch size={24} />
             </button>
