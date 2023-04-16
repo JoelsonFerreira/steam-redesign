@@ -40,7 +40,7 @@ function Card() {
               />
             ))}
 
-            {hiddenUsers && (
+            {hiddenUsers > 0 && (
               <span className="w-7 h-7 rounded-full -ml-3 flex items-center justify-center bg-slate-950 text-xs font-bold cursor-pointer">
                 +{hiddenUsers}
               </span>
